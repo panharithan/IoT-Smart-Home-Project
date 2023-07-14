@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="Light"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="#eeeeee"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imageview_lamp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/light"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="Lamp Room"
+            android:textColor="#1565c0"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/imageview_lamp"
+            />
+        <com.github.angads25.toggle.LabeledSwitch
+            android:id="@+id/switch_light"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginRight="20dp"
+            app:on="false"
+            app:textOn="ON"
+            app:textOff="OFF"
+            app:colorOn="#00c4a6"
+            app:colorBorder="#00c4a6"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp">
+
+            <Button
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@android:color/transparent"
+                android:foregroundTint="@color/colorPrimaryDark"
+                android:foreground="@drawable/ic_start_time"
+                android:id="@+id/btn_time" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:id="@+id/in_time"
+                android:text="Start Clock Time "
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <com.github.angads25.toggle.LabeledSwitch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                app:on="false"
+                app:textOn="Read"
+                app:textOff="Save"
+                app:colorOn="@color/colorPrimary"
+                app:colorBorder="@color/colorPrimary"
+                android:layout_marginLeft="30dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp">
+
+            <Button
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@android:color/transparent"
+                android:foregroundTint="@color/colorPrimaryDark"
+                android:id="@+id/btn_stop_time"
+                android:foreground="@drawable/ic_stop_time"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/set_time_stop"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text=" Stop Clcok Time"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <com.github.angads25.toggle.LabeledSwitch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                app:on="false"
+                app:textOn="Read"
+                app:textOff="Save"
+                app:colorOn="@color/colorPrimary"
+                app:colorBorder="@color/colorPrimary"
+                android:layout_marginLeft="32dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp">
+            <Button
+                android:id="@+id/btn_date"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_calendir"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="Date Time"
+                android:textSize="18sp"
+                android:id="@+id/in_date"
+                android:textStyle="bold" />
+            <com.github.angads25.toggle.LabeledSwitch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                app:on="false"
+                android:layout_marginLeft="80dp"
+                app:textOn="Read"
+                app:textOff="Save"
+                app:colorOn="@color/colorPrimary"
+                app:colorBorder="@color/colorPrimary"
+                android:nextFocusRight="@color/colorPrimary"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+

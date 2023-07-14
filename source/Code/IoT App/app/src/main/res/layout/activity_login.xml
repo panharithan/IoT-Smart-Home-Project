@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="40dp">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="140dp"
+        android:src="@drawable/ic_homeapp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Power By FE"
+        android:textColor="@color/deeppurple"
+        android:textSize="20dp"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColorHint="#cccccc">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_username"
+            android:backgroundTint="#ffff"
+            android:hint="Username"
+            android:foregroundTint="@color/colorPrimary"
+            android:inputType="textPersonName"
+            android:textColor="#cccccc"
+            android:textSize="20sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#cccccc">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ffff"
+            android:hint="Passwoard"
+            android:foregroundTint="@color/colorPrimary"
+            android:inputType="textPassword"
+            android:id="@+id/txt_password"
+            android:textColor="#cccccc"
+            android:textSize="20sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="16dp"
+        android:text="Forgot Password?"
+        android:textColor="#90A4AE"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimary"
+        android:text="Log In"
+        android:onClick="loginUser"
+        android:textColor="#cccccc" />
+
+</LinearLayout>

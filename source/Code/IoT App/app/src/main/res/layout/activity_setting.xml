@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/ic_back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="Setting"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:paddingTop="10dp"
+                android:elevation="6dp"
+                android:layout_marginTop="10dp"
+                android:background="#E0E0E0"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Language"
+                android:padding="7dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:textSize="20dp"
+                android:id="@+id/txt_language"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+            <com.github.angads25.toggle.LabeledSwitch
+                android:id="@+id/switch4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:textSize="14sp"
+                android:layout_alignParentRight="true"
+                app:on="false"
+                app:textOn="EN"
+                app:textOff="KH"
+                app:colorOn="@color/colorPrimary"
+                app:colorBorder="@color/colorPrimary"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="20dp"
+                android:elevation="6dp"
+                android:layout_below="@+id/txt_language"
+                android:background="#E0E0E0"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Logout Account"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp"
+                android:elevation="6dp"
+                android:id="@+id/txt_logout"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content"
+                android:onClick="userLogout"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="click logout account from this app"
+                android:id="@+id/txt_scrip"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black_overlay"
+                android:layout_below="@+id/txt_logout"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:elevation="6dp"
+                android:layout_below="@+id/txt_scrip"
+                android:background="#E0E0E0"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

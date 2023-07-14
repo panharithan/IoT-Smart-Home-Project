@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Home Automation with IoT</string>
+    <string name="home">Home</string>
+    <string name="setting">setting</string>
+    <string name="aboutus">About Us</string>
+    <string name="profile">Profile</string>
+
+    <string name="txt_aboutus">Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</string>
+    <string name="ip">114.134.184.143</string>
+
+    <string name="user_name">fe</string>
+    <string name="user_password">fe</string>
+
+    <string name="login_preference">sharedpreferences_login_preference</string>
+    <string name="login_status_preference">sharedpreferences_login_status_preference</string>
+</resources>

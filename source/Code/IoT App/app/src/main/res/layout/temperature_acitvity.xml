@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/textview_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="Home Temperature"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeeee"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imageview_temperature"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/temperature"
+            android:layout_width="300dp"
+            android:tint="@color/colorPrimary"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/textview_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="°C"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_below="@id/imageview_temperature"
+            />
+        <Button
+            android:id="@+id/button_temp_reload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_temp"
+            android:text="Reload"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/button"
+          />
+    </RelativeLayout>
+
+</LinearLayout>
